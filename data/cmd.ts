@@ -102,7 +102,7 @@ export const Socials: Action[] = [
     name: "GitHub",
     keywords: "github",
     perform: () => {
-      window.open("https://github.com/cristicretu");
+      window.open("https://github.com/hckmstrrahul");
     },
     section: "Socials",
   },
@@ -110,7 +110,7 @@ export const Socials: Action[] = [
     name: "Twitter",
     keywords: "twitter",
     perform: () => {
-      window.open("https://twitter.com/cristicrtu");
+      window.open("https://twitter.com/hckmstrrahul");
     },
     section: "Socials",
   },

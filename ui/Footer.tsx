@@ -8,10 +8,10 @@ export default function Footer() {
   return (
     <footer className="text-quaternary mx-auto max-w-2xl border-t border-dashed border-gray-200 px-8 py-12 pb-24 pt-4 text-sm dark:border-gray-200 dark:text-gray-600">
       <FooterGraphic />
-      <p className="flex flex-col gap-4">
-        © {new Date().getFullYear()} Rahul Chakraborty. All Rights Reserved.
+      <p className="flex flex-col gap-2">
+        © {new Date().getFullYear()} Rahul Chakraborty
         <span>
-          Website built using Next.js & TailwindCSS (
+          Temporary website • Built using Next.js & TailwindCSS (
           <a
             href="https://github.com/cristicretu/cretu.dev" // Update this with your GitHub repository URL
             rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function Footer() {
           >
             view source
           </a>
-          ).
+          )
         </span>
       </p>
     </footer>

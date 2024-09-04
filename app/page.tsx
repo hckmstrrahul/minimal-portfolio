@@ -29,15 +29,15 @@ function Header() {
           className="rounded-full"
           layout="fill"
           objectFit="contain"
-          src="/static/images/logo.png"
+          src="/static/images/logo.jpeg"
         />
         <div className="absolute -bottom-2 -right-2 rounded-full bg-white px-1 py-0.5 text-sm dark:bg-gray-900">
           ✨
         </div>
       </div>
       <div className="flex flex-col">
-        <h1>Cristian Crețu</h1>
-        <p className="text-quaternary">Design Engineer</p>
+        <h1>Rahul Chakraborty</h1>
+        <p className="text-quaternary">Multidisciplinary Designer</p>
       </div>
     </div>
   );
@@ -46,11 +46,11 @@ function Header() {
 function AboutMe() {
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-tertiary">About me</p>
+      <p className="text-quaternary">About me</p>
       <div className="text-secondary flex flex-col gap-4">
-        <h1>Rahul Chakraborty</h1>
-        <p className="text-quaternary">Design Engineer</p>
-        // ... rest of the component remains unchanged
+        <h1>I craft fun and beautiful digital products for the internet. I have designed and collaborated on some of the most impactful products of our time. </h1>
+        <h1>Currently, I work as a Staff Designer at Groww. Notable past experiences include Google Search & Assistant, Android WearOS, Flipkart and Swiggy.</h1>
+        
       </div>
     </div>
   );
@@ -106,7 +106,7 @@ function ContactLink({
 function Contact() {
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-tertiary">Links</p>
+      
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <ContactLink
           href="https://X.com/hckmstrrahul"
@@ -114,9 +114,9 @@ function Contact() {
           website="X"
         />
         <ContactLink
-          href="https://github.com/hckmstrrahul"
-          title="hckmstrrahul"
-          website="GitHub"
+          href="https://bento.me/rcb"
+          title="rcb"
+          website="Bento"
         />
         <ContactLink
           href="https://www.figma.com/@hckmstrrahul"
@@ -124,16 +124,16 @@ function Contact() {
           website="Figma"
         />
         <ContactLink
-          href="https://layers.to/rcb"
-          title="rcb"
-          website="Layers.to"
+          href="https://linkedin.com/in/hckmstrrahul"
+          title="hckmstrrahul"
+          website="Linkedin"
         />
         <ContactLink
           email="hi@rahulchakraborty.com"
           title="hi@rahulchakraborty.com"
           website="Email"
         />
-        <ContactLink href="https://linkedin.com/in/hckmstrrahul" title="hckmstrrahul" website="Linkedin" />
+        
       </div>
     </div>
   );

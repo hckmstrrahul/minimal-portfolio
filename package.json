@@ -55,13 +55,13 @@
   },
   "license": "MIT",
   "author": {
-    "email": "crisemcr@gmail.com",
-    "name": "Cristian Crețu",
-    "url": "https://cretu.dev"
+    "email": "hi@rahulchakraborty.com",
+    "name": "Rahul Chakraborty",
+    "url": "https://rahulchakraborty.com"
   },
-  "homepage": "https://cretu.dev",
+  "homepage": "https://rahulchakraborty.com",
   "bugs": {
-    "url": "https://github.com/cristicretu/cretu.dev/issues"
+    "url": "https://github.com/hckmstrrahul/"
   },
   "browserslist": [
     ">0.2%",
