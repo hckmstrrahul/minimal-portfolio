@@ -32,7 +32,7 @@ function Header() {
           src="/static/images/logo.jpeg"
         />
         <div className="absolute -bottom-2 -right-2 rounded-full bg-white px-1 py-0.5 text-sm dark:bg-gray-900">
-          ✨
+          👽
         </div>
       </div>
       <div className="flex flex-col">
@@ -49,8 +49,7 @@ function AboutMe() {
       <p className="text-quaternary">About me</p>
       <div className="text-secondary flex flex-col gap-4">
         <h1>I craft fun and beautiful digital products for the internet. I have designed and collaborated on some of the most impactful products of our time. </h1>
-        <h1>Currently, I work as a Staff Designer at Groww. Notable past experiences include Google Search & Assistant, Android WearOS, Flipkart and Swiggy.</h1>
-        
+        <h1>Currently, I work as a Staff Designer at <a href="https://groww.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Groww</a>. Notable past experiences include Google Search & Assistant, Android WearOS, Flipkart and Swiggy.</h1>
       </div>
     </div>
   );
