@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Rahul Chakraborty', url: 'https://rahulchakraborty.com' }],
   category: 'design',
   creator: 'Rahul Chakraborty',
-  description: 'Multidisciplinary Designer',
+  description: 'Designer, Artist, Generalist',
   icons: {
     apple: '/static/favicons/apple-touch-icon-180x180.png',
     icon: '/static/favicons/favicon-196x196.png',
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   keywords: [
     'User Experience',
     'Visuals',
-    'JavaScript',
+    'Generative Art',
     'Framer',
-    'TailwindCSS',
+    'Visual Design',
     'Design',
     'Engineering',
     'Product',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   ],
   manifest: '/static/favicons/site.webmanifest',
   openGraph: {
-    description: 'Multidisciplinary Designer',
+    description: 'Designer, Artist, Generalist',
     images: [
       {
         alt: 'Rahul Chakraborty',
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@hckmstrrahul',
     title: 'Rahul Chakraborty',
-    description: 'Multidisciplinary Designer',
+    description: 'Designer, Artist, Generalist',
     images: ['https://rahulchakraborty.com/static/images/og.png'],
   },
   verification: {
