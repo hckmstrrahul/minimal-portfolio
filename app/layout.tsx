@@ -81,6 +81,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@hckmstrrahul',
     title: 'Rahul Chakraborty',
+    description: 'Multidisciplinary Designer',
+    images: ['https://rahulchakraborty.com/static/images/og.png'],
   },
   verification: {
     google: 'fK4YqLAHjoaynXLF1e5gaPzDNOircgiYSgAwSXqr61o',
