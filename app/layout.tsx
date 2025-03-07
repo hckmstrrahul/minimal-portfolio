@@ -3,7 +3,7 @@ import './globals.css';
 import Providers from './providers';
 import { cn } from '@/lib/className';
 import AnimateEnter from '@/ui/AnimateEnter';
-import RollingMenu from '@/ui/RollingMenu';
+// import RollingMenu from '@/ui/RollingMenu';
 import { Metadata } from 'next';
 import type { Viewport } from 'next';
 import { Inter } from 'next/font/google';

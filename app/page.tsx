@@ -1,14 +1,14 @@
-import ExternalLink from '@/ui/ExternalLink';
+// import ExternalLink from '@/ui/ExternalLink';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 
-async function getData() {
-  return {
-    props: {
-      posts: [],
-    },
-  };
-}
+// async function getData() {
+//   return {
+//     props: {
+//       posts: [],
+//     },
+//   };
+// }
 
 export default function Home() {
   return (
@@ -49,7 +49,7 @@ function AboutMe() {
       <p className="text-quaternary">About me</p>
       <div className="text-secondary flex flex-col gap-4">
         <h1>I craft fun and delightful products on the internet. I have been lucky enough to design and collaborate on some of the most impactful products of our time. </h1>
-        <h1>Currently, I work as a Staff Designer at <a href="https://groww.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Groww</a>. I have previously worked and led key projects in Google Voice Search, Google Assistant, Android WearOS, Flipkart and Swiggy.</h1>
+        <h1>Currently, I work as a Staff Designer at <a className="underline underline-offset-2" href="https://groww.in" rel="noopener noreferrer" target="_blank">Groww</a>. I have previously worked and led key projects in Google Voice Search, Google Assistant, Android WearOS, Flipkart and Swiggy.</h1>
       </div>
     </div>
   );
