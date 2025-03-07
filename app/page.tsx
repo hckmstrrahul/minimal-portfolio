@@ -37,7 +37,7 @@ function Header() {
       </div>
       <div className="flex flex-col">
         <h1>Rahul Chakraborty</h1>
-        <p className="text-quaternary">Multidisciplinary Designer</p>
+        <p className="text-quaternary">Designer, Artist, Generalist</p>
       </div>
     </div>
   );
@@ -48,8 +48,8 @@ function AboutMe() {
     <div className="flex flex-col gap-4">
       <p className="text-quaternary">About me</p>
       <div className="text-secondary flex flex-col gap-4">
-        <h1>I craft fun and beautiful digital products for the internet. I have designed and collaborated on some of the most impactful products of our time. </h1>
-        <h1>Currently, I work as a Staff Designer at <a href="https://groww.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Groww</a>. Notable past experiences include Google Search & Assistant, Android WearOS, Flipkart and Swiggy.</h1>
+        <h1>I craft fun and delightful products on the internet. I have been lucky enough to design and collaborate on some of the most impactful products of our time. </h1>
+        <h1>Currently, I work as a Staff Designer at <a href="https://groww.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">Groww</a>. I have previously worked and led key projects in Google Voice Search, Google Assistant, Android WearOS, Flipkart and Swiggy.</h1>
       </div>
     </div>
   );
