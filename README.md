@@ -1,6 +1,6 @@
 ## RCB
 
-WIP Personal Website, 95% executed by AI.
+WIP Personal Website
 
 Website template from cretu.dev
 
