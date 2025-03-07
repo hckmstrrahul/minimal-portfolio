@@ -11,13 +11,13 @@ export default function Footer() {
       <p className="flex flex-col gap-2">
         © {new Date().getFullYear()} Rahul Chakraborty
         <span>
-          Personal website WIP • Built using Next.js & TailwindCSS (
+          Personal website WIP • This website is built using Next.js & TailwindCSS (
           <a
             href="https://github.com/cristicretu/cretu.dev" // Update this with your GitHub repository URL
             rel="noopener noreferrer"
             target="_blank"
           >
-            Source
+            Original Source ↗︎
           </a>
           )
         </span>
