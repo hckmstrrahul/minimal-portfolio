@@ -79,10 +79,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@hckmstrrahul',
-    title: 'Rahul Chakraborty',
     description: 'Designer, Artist, Generalist',
     images: ['https://rahulchakraborty.com/static/images/og.png'],
+    site: '@hckmstrrahul',
+    title: 'Rahul Chakraborty',
   },
   verification: {
     google: 'fK4YqLAHjoaynXLF1e5gaPzDNOircgiYSgAwSXqr61o',
