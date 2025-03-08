@@ -7,9 +7,7 @@ import AnimateEnter from '@/ui/AnimateEnter';
 import { Metadata } from 'next';
 import type { Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import dynamic from 'next/dynamic';
-
-const Analytics = dynamic(() => import('@vercel/analytics/react').then(mod => mod.Analytics), { ssr: false });
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
