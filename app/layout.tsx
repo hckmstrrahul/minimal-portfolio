@@ -7,7 +7,7 @@ import AnimateEnter from '@/ui/AnimateEnter';
 import { Metadata } from 'next';
 import type { Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -97,6 +97,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script 
+          id="vercel-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+            window.va('init', {
+              debug: false
+            });
+            window.va('event', 'pageview');
+          `}
+        </Script>
+        <Script 
+          src="/_vercel/insights/script.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body
         className={cn(
           `${inter.className}`,
@@ -137,7 +155,6 @@ export default function RootLayout({
             <>
               {children}
               <Footer />
-              <Analytics />
             </>
           </AnimateEnter>
         </Providers>
