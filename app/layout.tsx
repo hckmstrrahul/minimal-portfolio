@@ -7,6 +7,7 @@ import AnimateEnter from '@/ui/AnimateEnter';
 import { Metadata } from 'next';
 import type { Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -136,6 +137,7 @@ export default function RootLayout({
             <>
               {children}
               <Footer />
+              <Analytics />
             </>
           </AnimateEnter>
         </Providers>
