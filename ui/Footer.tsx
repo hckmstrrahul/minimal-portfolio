@@ -17,7 +17,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Original Source ↗︎
+            Original Source
           </a>
           )
         </span>
