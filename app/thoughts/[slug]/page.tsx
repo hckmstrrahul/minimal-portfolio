@@ -3,7 +3,6 @@ import { formatDate } from '@/lib/utils';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { mdxComponents } from '@/lib/mdx-components';
 
@@ -42,21 +41,21 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Back button */}
       <div className="mb-12">
         <Link 
+          className="flex items-center gap-1 text-secondary hover:text-primary transition-colors duration-150"
           href="/thoughts" 
-          className="text-secondary hover:text-primary transition-colors duration-150 flex items-center gap-1"
         >
           <svg 
-            className="w-4 h-4" 
+            className="h-4 w-4" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24" 
             xmlns="http://www.w3.org/2000/svg"
           >
             <path 
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
               strokeLinecap="round" 
               strokeLinejoin="round" 
               strokeWidth={2} 
-              d="M10 19l-7-7m0 0l7-7m-7 7h18"
             />
           </svg>
           Back to thoughts
@@ -72,7 +71,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         
         {/* Blog content */}
         <div className="prose prose-lg dark:prose-invert max-w-none">
-          <MDXRemote source={post.content} components={mdxComponents} />
+          <MDXRemote components={mdxComponents} source={post.content} />
         </div>
       </article>
     </div>
@@ -81,7 +80,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
-  return slugs.map(slug => ({
+  return slugs.map((slug) => ({
     slug,
   }));
 } 

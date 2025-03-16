@@ -15,4 +15,4 @@ export default function ThoughtsLayout({
       {children}
     </div>
   );
-} 
+}

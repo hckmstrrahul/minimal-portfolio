@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { MDXRemoteProps } from 'next-mdx-remote/rsc';
-import { useState } from 'react';
 import React from 'react';
 
 interface BlogImageProps {
