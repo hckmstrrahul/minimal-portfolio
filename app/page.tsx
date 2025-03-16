@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getHomepagePosts } from '@/lib/blog';
 import { formatDate } from '@/lib/utils';
+import ThemeToggle from '@/ui/ThemeToggle';
 // import Link from 'next/link';
 
 // async function getData() {
@@ -26,22 +27,27 @@ export default function Home() {
 
 function Header() {
   return (
-    <div className="flex flex-row items-center gap-4">
-      <div className="relative h-12 w-12">
-        <Image
-          alt="Logo"
-          className="rounded-full"
-          layout="fill"
-          objectFit="contain"
-          src="/static/images/logo.jpeg"
-        />
-        <div className="absolute -bottom-2 -right-2 rounded-full bg-white px-1 py-0.5 text-sm dark:bg-gray-900">
-          👽
+    <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-row items-center gap-4">
+        <div className="relative h-12 w-12">
+          <Image
+            alt="Logo"
+            className="rounded-full"
+            layout="fill"
+            objectFit="contain"
+            src="/static/images/logo.jpeg"
+          />
+          <div className="absolute -bottom-2 -right-2 rounded-full bg-white px-1 py-0.5 text-sm dark:bg-gray-900">
+            👽
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <h1>Rahul Chakraborty</h1>
+          <p className="text-quaternary">Designer, Artist, Generalist</p>
         </div>
       </div>
-      <div className="flex flex-col">
-        <h1>Rahul Chakraborty</h1>
-        <p className="text-quaternary">Designer, Artist, Generalist</p>
+      <div>
+        <ThemeToggle />
       </div>
     </div>
   );
