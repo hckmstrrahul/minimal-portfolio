@@ -133,7 +133,7 @@ export default function Swatch() {
             key={index}
           >
             {item.keywords === 'home' && <HomeIcon className="h-6 w-6" />}
-            {item.keywords === 'writing' && (
+            {item.keywords === 'thoughts' && (
               <BookOpenIcon className="h-6 w-6" />
             )}
             <span className="select-none text-xs">{item.name}</span>

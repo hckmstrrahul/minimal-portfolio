@@ -186,7 +186,7 @@ export default function RollingMenu() {
                       className={`h-6 w-6 text-[${action.iconColor}]`}
                     />
                   )}
-                  {action.keywords === 'writing' && (
+                  {action.keywords === 'thoughts' && (
                     <PencilIcon
                       className={`h-6 w-6 text-[${action.iconColor}]`}
                     />

@@ -1,5 +1,8 @@
 // import ExternalLink from '@/ui/ExternalLink';
 import Image from 'next/image';
+import Link from 'next/link';
+import { getHomepagePosts } from '@/lib/blog';
+import { formatDate } from '@/lib/utils';
 // import Link from 'next/link';
 
 // async function getData() {
@@ -16,6 +19,7 @@ export default function Home() {
       <Header />
       <Contact />
       <AboutMe />
+      <Thoughts />
     </div>
   );
 }
@@ -50,6 +54,31 @@ function AboutMe() {
       <div className="text-secondary flex flex-col gap-4">
         <h1>I craft fun and delightful products on the internet. I have been lucky enough to design and collaborate on some of the most impactful products of our time. </h1>
         <h1>Currently, I work as a Staff Designer at <a className="underline underline-offset-2" href="https://groww.in" rel="noopener noreferrer" target="_blank">Groww</a>. I have previously worked and led key projects in Google Voice Search, Google Assistant, Android WearOS, Flipkart and Swiggy.</h1>
+      </div>
+    </div>
+  );
+}
+
+function Thoughts() {
+  // Get posts configured to show on homepage
+  const posts = getHomepagePosts();
+  
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-quaternary">Thoughts</p>
+      <div className="flex flex-col gap-6">
+        {posts.map((post) => (
+          <Link 
+            key={post.slug} 
+            href={`/thoughts/${post.slug}`}
+            className="group flex flex-col gap-1 transition-opacity duration-150 hover:opacity-70"
+          >
+            <div className="flex flex-row items-center justify-between">
+              <h2 className="text-secondary group-hover:text-primary transition-colors duration-150 max-w-[75%]">{post.title}</h2>
+              <span className="text-quaternary text-sm whitespace-nowrap">{formatDate(post.date)}</span>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   description: 'A place where I share ideas about design and code.',
-  title: 'Writing',
+  title: 'thoughts',
 };
 
 export default async function Resources() {
