@@ -50,7 +50,7 @@ export default function ThoughtsPage() {
             href={`/thoughts/${post.slug}`}
             key={post.slug} 
           >
-            <div className="flex flex-row items-center justify-between">
+            <div className="flex flex-row items-start justify-between">
               <h2 className="max-w-[75%] text-xl font-medium text-secondary group-hover:text-primary transition-colors duration-150">
                 {post.title}
               </h2>

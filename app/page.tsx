@@ -46,7 +46,7 @@ function Header() {
           <p className="text-quaternary">Designer, Artist, Generalist</p>
         </div>
       </div>
-      <div>
+      <div className="flex items-end h-12">
         <ThemeToggle />
       </div>
     </div>
@@ -79,7 +79,7 @@ function Thoughts() {
             href={`/thoughts/${post.slug}`}
             className="group flex flex-col gap-1 transition-opacity duration-150 hover:opacity-70"
           >
-            <div className="flex flex-row items-center justify-between">
+            <div className="flex flex-row items-start justify-between">
               <h2 className="text-secondary group-hover:text-primary transition-colors duration-150 max-w-[75%]">{post.title}</h2>
               <span className="text-quaternary text-sm whitespace-nowrap">{formatDate(post.date)}</span>
             </div>
