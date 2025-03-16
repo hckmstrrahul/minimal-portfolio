@@ -2,16 +2,8 @@
   "extends": "next/core-web-vitals",
   "rules": {
     "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "react/jsx-sort-props": "off",
-    "eol-last": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "arrow-parens": "off",
-    "unicorn/prefer-node-protocol": "off",
-    "typescript-sort-keys/interface": "off",
-    "sort-keys-fix/sort-keys-fix": "off",
-    "@typescript-eslint/no-inferrable-types": "off",
-    "import/no-duplicates": "off",
-    "unicorn/better-regex": "off",
-    "no-useless-escape": "off"
+    "eol-last": "off"
   }
 } 
