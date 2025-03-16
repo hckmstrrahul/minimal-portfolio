@@ -14,13 +14,13 @@ export default function Footer() {
       <p className="flex flex-col gap-2">
         © {new Date().getFullYear()} Rahul Chakraborty
         <span>
-          Personal website WIP • This website is built using Next.js & TailwindCSS (
+          Personal website WIP • Built with Claude & Cursor using Next.js & TailwindCSS • This website was cloned from an open-source template. (
           <a
             href="https://github.com/cristicretu/cretu.dev" // Update this with your GitHub repository URL
             rel="noopener noreferrer"
             target="_blank"
           >
-            Original Source
+            Source
           </a>
           )
         </span>
@@ -43,7 +43,7 @@ function ParticleFlares() {
     for (let i = 0; i < flareCount; i++) {
       // Random position around the sphere
       const angle = Math.random() * Math.PI * 2;
-      const radius = 1 + Math.random() * 0.3; // Slightly outside the main sphere
+      const radius = 0.925 + Math.random() * 0.275; // Midpoint between original (1+0.3) and reduced (0.85+0.25)
       
       // Position on sphere surface
       const x = Math.cos(angle) * radius * Math.sin(Math.random() * Math.PI);
@@ -51,9 +51,9 @@ function ParticleFlares() {
       const z = Math.cos(Math.random() * Math.PI) * radius;
       
       // Random size and lifetime
-      const size = 0.02 + Math.random() * 0.03;
+      const size = 0.0175 + Math.random() * 0.0275; // Midpoint between original (0.02+0.03) and reduced (0.015+0.025)
       const lifetime = 1 + Math.random() * 2;
-      const speed = 0.2 + Math.random() * 0.3;
+      const speed = 0.175 + Math.random() * 0.275; // Midpoint between original (0.2+0.3) and reduced (0.15+0.25)
       
       particles.push({ 
         position: new THREE.Vector3(x, y, z), 
@@ -135,7 +135,7 @@ function PixelatedSphere() {
   
   // Create particles with different colors based on theme
   const particles = useMemo(() => {
-    const geometry = new THREE.IcosahedronGeometry(1, 4);
+    const geometry = new THREE.IcosahedronGeometry(0.9, 4); // Midpoint between original 1.0 and reduced 0.8
     const positions = geometry.attributes.position;
     const colors = [];
     
@@ -180,7 +180,7 @@ function PixelatedSphere() {
         <primitive object={particles} />
         <pointsMaterial 
           vertexColors 
-          size={theme === 'light' ? 0.07 : 0.05} 
+          size={theme === 'light' ? 0.0625 : 0.045} // Midpoint between original (0.07/0.05) and reduced (0.055/0.04)
           sizeAttenuation={true}
         />
       </points>
@@ -229,7 +229,7 @@ function Birds() {
         index: number,
       ) => {
         const angle = (elapsedTime + index * 0.2) % (2 * Math.PI);
-        const radius = 2.3 + Math.random() * 0.0001;
+        const radius = 2.05 + Math.random() * 0.0001; // Midpoint between original 2.3 and reduced 1.8
         bird.position.x =
           radius * Math.cos(angle) - Math.sin(elapsedTime * 0.5 + index);
         bird.position.y =
@@ -240,7 +240,7 @@ function Birds() {
   });
 
   const birds = [...Array(48)].map((_, i) => {
-    const size = i % 2 === 0 ? 0.03 : 0.05;
+    const size = i % 2 === 0 ? 0.0275 : 0.045; // Midpoint between original (0.03/0.05) and reduced (0.025/0.04)
     return (
       <mesh key={i} position={[1, 0, 0]}>
         <planeGeometry args={[size, size]} />
@@ -266,7 +266,14 @@ function FooterGraphic() {
   
   return (
     <div className="py-8 w-full">
-      <Canvas style={{ height: '240px' }} camera={{ fov: 40, position: [0, 0, 5] }} gl={{ antialias: false }}>
+      <Canvas 
+        style={{ height: '240px' }} 
+        camera={{ 
+          fov: 42.5, // Midpoint between original 40 and reduced 45
+          position: [0, 0, 6.25] // Midpoint between original 5 and reduced 7.5
+        }} 
+        gl={{ antialias: false }}
+      >
         <PixelatedSphere />
         <Birds />
         <OrbitControls enableZoom={false} />
