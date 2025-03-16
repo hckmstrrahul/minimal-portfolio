@@ -156,10 +156,10 @@ export default function RootLayout({
             <>
               {children}
               <Footer />
+              <SpeedInsights />
             </>
           </AnimateEnter>
         </Providers>
-        <SpeedInsights />
       </body>
     </html>
   );
