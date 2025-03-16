@@ -47,9 +47,22 @@ export default function ThoughtsPage() {
         {posts.map((post) => (
           <Link 
             className="group flex flex-col gap-2 transition-opacity duration-150 hover:opacity-70"
-            href={}
+            href={`/thoughts/${post.slug}`}
             key={post.slug} 
           >
             <div className="flex flex-row items-center justify-between">
-              <h2 className="max-w-[75
+              <h2 className="max-w-[75%] text-xl font-medium text-secondary group-hover:text-primary transition-colors duration-150">
+                {post.title}
+              </h2>
+              <span className="text-quaternary text-sm whitespace-nowrap">
+                {formatDate(post.date)}
+              </span>
+            </div>
+            <p className="text-tertiary">{post.description}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
 
