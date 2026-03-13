@@ -3,29 +3,13 @@
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-// Helper function to determine if it's after 6pm
-function isAfter6PM() {
-  const currentHour = new Date().getHours();
-  return currentHour >= 18; // 18 is 6pm in 24-hour format
-}
-
 export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // Set theme based on time of day when component mounts
   useEffect(() => {
     setMounted(true);
-    
-    // Check if we should apply time-based theme
-    const preferredTheme = isAfter6PM() ? 'dark' : 'light';
-    
-    // Only set theme if it hasn't been manually set before
-    // This checks for localStorage to see if user has a preference
-    if (!localStorage.getItem('theme')) {
-      setTheme(preferredTheme);
-    }
-  }, [setTheme]);
+  }, []);
 
   if (!mounted) {
     return (
